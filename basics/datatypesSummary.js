@@ -44,4 +44,8 @@ const myFun = function sum() {
 │    2    │ 'function'
 */
 
-console.log(typeof BigInt);
+// console.log(typeof BigInt);
+
+
+
+
