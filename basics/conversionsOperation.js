@@ -32,4 +32,71 @@ if it stores "null" as the value then when we try to convert it into a number th
 // console.log(booleanLoggedIn);
 
 
+// ************************** Operations ************************
+
+// console.log(2**8);
+// console.log(2/3);
+
+// let str = "6666666666666666"
+// console.log(2%3);
+
+
+// console.log("1" + 2);  // 12
+// console.log(1 + "2");  // 12
+// console.log(1 + 2 + "2");  // 32
+// console.log("2" + 1 + 2);  // 212
+
+
+// console.log(3+4*5%3);
+
+/* 
+operator precedence : 
+                Increment Operators
+# Postfix increments are executed before prefix increments
+
+15	++	Postfix Increment	i++
+15	--	Postfix Decrement	i--
+14	++	Prefix Increment	++i
+14	--	Prefix Decrement	--i
+                
+                NOT Operators
+
+14	!	Logical NOT	!(x==y)
+14	~	Bitwise NOT	~x
+                
+                Unary Operators
+
+14	+	Unary Plus	+x
+14	-	Unary Minus	-x
+14	typeof	Data Type	typeof x
+14	void	Evaluate Void	void(0)
+14	delete	Property Delete	delete myCar.color
+
+                Arithmetic Operators
+# Exponentiations are executed before multiplications
+# Multiplications and divisions are executed before additions and subtractions
+
+13	**	Exponentiation ES2016	10 ** 2
+12	*	Multiplication	10 * 5
+12	/	Division	10 / 5
+12	%	Division Remainder	10 % 5
+11	+	Addition	10 + 5
+11	-	Subtraction	10 - 5
+11	+	Concatenation	"John" + "Doe"
+*/
+
+
+// console.log(+true);
+
+// let aBoolean = true
+// let aString = String(aBoolean)
+// console.log(+false);
+/* 
+In JavaScript, when you use a unary plus operator (+) before a value, it tries to convert that value into a number.*/
+
+// console.log(+"");        // 0
+
+
+
+
 
