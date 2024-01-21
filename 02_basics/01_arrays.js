@@ -63,12 +63,17 @@ const anotherArray = [0,1,2,3,4,5,6,7,8,9]
 
 // #splice method
 const yeNayaArrayHai = anotherArray.splice(1,5);
-// Syntax
+// # Syntax
 // splice(start)
 // splice(start, deleteCount) => deleteCount basically means how many ele we wanna remove
 // splice(start, deleteCount, item1)
 // splice(start, deleteCount, item1, item2)
 // splice(start, deleteCount, item1, item2, /* …, */ itemN)
+// # Return value
+// An array containing the deleted elements.
+// If only one element is removed, an array of one element is returned.
+// If no elements are removed, an empty array is returned.
+
 
 // console.log("splice method does this : ",yeNayaArrayHai);
 // console.log("After Array :\n\n",anotherArray);
