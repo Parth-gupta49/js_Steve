@@ -26,11 +26,11 @@ console.log(logInUserMessage("Parth"))
 
 // console.log(capitalize("SAM"));
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 const str = "50px"
 console.log(Number.parseInt(str,10));
 
-=======
+// =======
 // const str = "50px"
 // console.log(Number.parseInt(str,10));
 
@@ -72,4 +72,4 @@ function returnSecondValue(getArray) {
 
 // console.log(returnSecondValue(myArray));
 console.log(returnSecondValue([100,200,300]));
->>>>>>> 7802cd11c56c8edafcdf5a3cb019fabc8156a116
+// >>>>>>> 7802cd11c56c8edafcdf5a3cb019fabc8156a116
