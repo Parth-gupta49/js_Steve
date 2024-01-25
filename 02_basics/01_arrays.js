@@ -16,9 +16,12 @@
 
 const newArray = [1,2,3,4]
 // #push and #pop used to add and remove the elements of an array at the end
+// Array.push() returns the new length of the array.
+// Array.pop() returns the removed element from the array
 // newArray.push(5)
-// newArray.push(6)
-// newArray.pop()
+// newArray.push(62)
+// const newLength = newArray.pop()
+// console.log(newLength);
 // console.log(newArray);
 
 // #unshift and #shift method
@@ -83,6 +86,15 @@ const letSeeSplice = ["Monday","Tuesday","Thrusday","Friday","Saturday","Sunday"
 
 // console.log(letSeeSplice.splice(3));
 // console.log(letSeeSplice.splice(2,0,"Wednesday"));
-console.log(letSeeSplice.splice(2,1,"Wednesday","Thrusday"))
-console.log(letSeeSplice.join());
+// console.log(letSeeSplice.splice(2,1,"Wednesday","Thrusday"))
+// console.log(letSeeSplice.join());
 
+
+
+// foreach
+const grades = [10, 8, 13];
+
+grades.forEach(function(grade) {
+    // do something with individual grade
+    console.log(grade,end);
+});
