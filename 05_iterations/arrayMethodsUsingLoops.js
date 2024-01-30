@@ -56,12 +56,22 @@ const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // let sum = newNumbers.reduce((acc, curr) => acc + curr,0);
 // console.log(sum);
 
-const shoppingCart = [
-    { itemName: "js course", price: 3000 },
-    { itemName: "python course", price: 2000 },
-    { itemName: "java course", price: 1000 },
-    { itemName: "mobile dev course", price: 6000 },
-]
+// const shoppingCart = [
+//     { itemName: "js course", price: 3000 },
+//     { itemName: "python course", price: 2000 },
+//     { itemName: "java course", price: 1000 },
+//     { itemName: "mobile dev course", price: 6000 },
+// ]
 
-let priceToPay = shoppingCart.reduce((acc,item) => item.price + acc, 0);
-console.log(priceToPay);
+// let priceToPay = shoppingCart.reduce((acc,item) => item.price + acc, 0);
+// console.log(priceToPay);
+
+
+// finding max using reduce method
+// const arr = [12,3,234,53,6,90,1211];
+const arr = [-12,-3,-234,-53,-6,-90,-1211];
+console.log(arr.reduce( (acc,curr) => {
+    if(acc<curr)
+        return curr
+    return acc
+},arr[0]));
