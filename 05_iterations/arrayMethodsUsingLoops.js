@@ -70,8 +70,4 @@ const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // finding max using reduce method
 // const arr = [12,3,234,53,6,90,1211];
 const arr = [-12,-3,-234,-53,-6,-90,-1211];
-console.log(arr.reduce( (acc,curr) => {
-    if(acc<curr)
-        return curr
-    return acc
-},arr[0]));
+console.log(arr.reduce( (acc,curr) => acc < curr ?  curr : acc));
