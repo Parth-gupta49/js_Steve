@@ -46,21 +46,10 @@
 // }
 
 const names = ["Parth","Steve","David"]
-for (const name of names) {
-    console.log(name);
-}
-// Maps
-// Maps are not iterable
-// stores unique values and remembers the order in which we fill it
-const map = new Map()
-map.set("IN", "India")
-map.set("US", "United States of America")
-map.set("FR", "France")
-// console.log(map);
-// printing map key-value pairs using forof loop
-// for (const [key,value] of map) {
-//     console.log(key,":-",value);
+// for (const name of names) {
+//     console.log(name);
 // }
+
 
 // Objects are not iterable 
 // forof loop wont work for the objects
@@ -68,19 +57,18 @@ map.set("FR", "France")
 //     game1 : "NFS",
 //     game2 : "Spiderman"
 // }
-
 // for (const [key,value] of myObject) {
 //     console.log(key,":-",value);
 // }
 
 
 
-const myObject = {
-    js: "javascript",
-    cpp: "C++",
-    rb: "ruby",
-    java: "java"
-}
+// const myObject = {
+//     js: "javascript",
+//     cpp: "C++",
+//     rb: "ruby",
+//     java: "java"
+// }
 
 // forin loop
 // for the arrays the key will give the indexes starting form the zero 
