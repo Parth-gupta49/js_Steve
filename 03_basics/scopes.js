@@ -39,5 +39,14 @@ one()
 // console.log(myFunction(34));
 
 
+function letTest() {
+    let x = 1;
+    {
+        // let x = 56;
+        console.log(x);
+    }
+    console.log(x);
+}
 
+letTest()
 
