@@ -13,7 +13,7 @@
 // strong.textContent = "Hey this is pretty Isn't it?"
 // div.append(strong)
 // body.append(div)
-// // textContent prints it as it is how we are writing it in the html
+// textContent prints it as it is how we are writing it in the html
 // however innerText prints it as it shown in the browser
 // For e.g, if we set something as display:none then, innerText will not show that but textContent will do
 
