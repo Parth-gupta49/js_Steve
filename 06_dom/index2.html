@@ -42,9 +42,14 @@
     console.log(secondLan);
     const newLi = document.createElement("li")
     newLi.innerHTML = "CS - Computer Science"
-    secondLan.replaceWith(newLi)
+    secondLan.replaceWith(newLi) 
 
+    // editing :
+     const firstLang = document.querySelector("li:first-child")
+     firstLang.outerHTML = "<li>Parth-Gupta</li>"
 
-
+    // remove an element
+    const lastLan = document.querySelector("li:last-child")
+    lastLan.remove()
 </script>
 </html>
