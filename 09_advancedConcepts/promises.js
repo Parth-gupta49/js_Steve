@@ -163,3 +163,61 @@ async function consumePromise5() {
 }
 
 consumePromise5()
+
+async function getAllUsers(){
+  try {
+    const response = await fetch('https://api.github.com/users/Parth-gupta49')
+    const data = await response.json()
+    console.log(data);
+  } catch (error) {
+    console.log('Something went wrong');
+  }
+}
+
+getAllUsers()
+
+// 6:18:30
+
+// working with the HTML page here (186-221)
+/*
+const display = document.querySelector('.display');
+let button = document.getElementById('btn')
+
+const imageElement = document.createElement('img');
+imageElement.classList = 'userImage'
+const textElement = document.createElement('p');
+textElement.classList = 'para';
+
+
+
+
+
+// taking myGithub details by fetching the details from the api
+fetch('https://api.github.com/users/Parth-gupta49')
+
+.then((response)=>{
+  return response.json()})
+
+.then((data)=>{
+    imageElement.src = data.avatar_url
+    textElement.appendChild(document.createTextNode(`Name : ${data.name}  Location : ${data.location}`))
+  })
+
+.catch(
+  (error) => {
+    console.log(error);
+  }
+)
+
+button.addEventListener('click',()=>{
+  display.appendChild(imageElement)
+  display.appendChild(textElement)
+  button.remove()
+})*/
+
+fetch("https://api.github.com/users/parth-gupta49")
+  .then((response) => {
+    return response.json();
+  })
+  .then(function(data){console.log(data.name);console.log(data.location)})
+  .catch((error) => console.log(error));
