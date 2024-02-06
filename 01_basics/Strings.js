@@ -1,10 +1,10 @@
-// console.log('hello'+50+' world');
 
 // let name = "Parth"
 // let num = 3000
 // String interpolation
+// console.log('hello'+50+' world');
 // console.log(`hello this is ${name} and i am doin just fine mate and love you ${num} :)`); //modern way of doin the same stuff as above
-
+// 
 // another way of creating string 
 
 // const gameName = new String("Hey what's up this is your bro")
