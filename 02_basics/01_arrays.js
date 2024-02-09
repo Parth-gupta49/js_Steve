@@ -14,7 +14,9 @@
 
 // methods of arrays
 
-const newArray = [1,2,3,4]
+
+
+const newArray = [1,2,3,4,5]
 // #push and #pop used to add and remove the elements of an array at the end
 // Array.push() returns the new length of the array.
 // Array.pop() returns the removed element from the array
@@ -28,9 +30,9 @@ const newArray = [1,2,3,4]
 // unshift and shift are used to add and remove the element from the start of the array
 // unshift add the ele at the start
 // shift remove the ele from the start
-// newArray.unshift(89)
-// newArray.shift()
-// console.log('Array after shift method :',newArray);
+newArray.unshift(89)
+const ret = newArray.shift()
+// console.log('Array after shift method :',ret);
 
 // #includes method
 // console.log('includes method of the array always returns a boolean value like this one',newArray.includes(5));
@@ -52,13 +54,13 @@ const newArray = [1,2,3,4]
 // #slice and #splice
 
 const anotherArray = [0,1,2,3,4,5,6,7,8,9]
-
+// console.log(anotherArray.join(' '));
 // #slice method
 // console.log("Original Array :\n\n",anotherArray);
 // console.log("Slice does this .slice(1,5): ",anotherArray.slice(1,5));
 // console.log("After slice :\n\n",anotherArray);
 // slice practice:
-// const letSeeSlice = anotherArray.slice(1,5);
+const letSeeSlice = anotherArray.slice(1,5);
 // console.log(letSeeSlice);
 // letSeeSlice[1] = 59
 // console.log(letSeeSlice);
@@ -86,7 +88,8 @@ const letSeeSplice = ["Monday","Tuesday","Thrusday","Friday","Saturday","Sunday"
 
 // console.log(letSeeSplice.splice(3));
 // console.log(letSeeSplice.splice(2,0,"Wednesday"));
-// console.log(letSeeSplice.splice(2,1,"Wednesday","Thrusday"))
+// console.log(letSeeSplice);
+// console.log(letSeeSplice.splice(2,1))
 // console.log(letSeeSplice.join());
 
 
@@ -94,7 +97,6 @@ const letSeeSplice = ["Monday","Tuesday","Thrusday","Friday","Saturday","Sunday"
 // foreach
 const grades = [10, 8, 13];
 
-grades.forEach(function(grade) {
-    // do something with individual grade
-    console.log(grade,end);
+grades.forEach((grade,index,array) => {
+    console.log(`${grade} index is : ${index} array is : ${array}`);
 });
