@@ -16,7 +16,7 @@
 
 
 
-const newArray = [1,2,3,4,5]
+const newArray = [1, 2, 3, 4, 5]
 // #push and #pop used to add and remove the elements of an array at the end
 // Array.push() returns the new length of the array.
 // Array.pop() returns the removed element from the array
@@ -53,21 +53,21 @@ const ret = newArray.shift()
 
 // #slice and #splice
 
-const anotherArray = [0,1,2,3,4,5,6,7,8,9]
+const anotherArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 // console.log(anotherArray.join(' '));
 // #slice method
 // console.log("Original Array :\n\n",anotherArray);
 // console.log("Slice does this .slice(1,5): ",anotherArray.slice(1,5));
 // console.log("After slice :\n\n",anotherArray);
 // slice practice:
-const letSeeSlice = anotherArray.slice(1,5);
+const letSeeSlice = anotherArray.slice(1, 5);
 // console.log(letSeeSlice);
 // letSeeSlice[1] = 59
 // console.log(letSeeSlice);
 // console.log("After slice :\n",anotherArray.join());
 
 // #splice method
-const yeNayaArrayHai = anotherArray.splice(1,5);
+const yeNayaArrayHai = anotherArray.splice(1, 5);
 // # Syntax
 // splice(start)
 // splice(start, deleteCount) => deleteCount basically means how many ele we wanna remove
@@ -84,7 +84,7 @@ const yeNayaArrayHai = anotherArray.splice(1,5);
 // console.log("After Array :\n\n",anotherArray);
 // splice practice: 
 
-const letSeeSplice = ["Monday","Tuesday","Thrusday","Friday","Saturday","Sunday"]
+const letSeeSplice = ["Monday", "Tuesday", "Thrusday", "Friday", "Saturday", "Sunday"]
 
 // console.log(letSeeSplice.splice(3));
 // console.log(letSeeSplice.splice(2,0,"Wednesday"));
@@ -95,8 +95,108 @@ const letSeeSplice = ["Monday","Tuesday","Thrusday","Friday","Saturday","Sunday"
 
 
 // foreach
-const grades = [10, 8, 13];
+// const grades = [10, 8, 13];
 
-grades.forEach((grade,index,array) => {
-    console.log(`${grade} index is : ${index} array is : ${array}`);
-});
+// grades.forEach((grade,index,array) => {
+//     console.log(`${grade} index is : ${index} array is : ${array}`);
+// });
+
+let arr1 = [12, 3, 3]
+let arr2 = [12232, 3, 3]
+arr1.unshift(12345)
+let arr3 = [...arr1, ...arr2]
+// let myObj = arr3.values()
+
+// for (const oneValue of myObj) {
+//     console.log(oneValue);  
+// }
+// for (const [index,value] of arr3.values()) {
+//     console.log(`${index} : ${value}`);
+// }
+const arr = ["a", "b", "c", "d", "e"];
+// values()
+// const values = arr.values();
+// for (const letter of values) {
+//   console.log(letter);
+//   break;
+// }
+// // "a" "b" "c" "d" "e"
+// for (const letter of values) {
+//   console.log(letter);
+// }
+
+// for (const letter of values) {
+//   console.log(letter);
+// }
+// entries
+// let iterator = arr.entries()
+
+// for (const [index,value] of arr.entries()) {
+//     console.log(`${index} : ${value}`);
+// }
+
+// every()
+
+let marks = [99, 98, 76, 65, 75, 33, 90]
+
+// let checkMarks = (mark) => {return mark > 40}
+
+// console.log(marks.every(checkMarks));
+
+// fill()
+//Syntax : 
+// fill(value)
+// fill(value, start)
+// fill(value, start, end)
+
+// return values
+// it returns the modified array
+// console.log(marks.fill(99,3,5));
+
+
+// filter()
+// it will filter out the elements based on the condition provided in the callback function
+
+// return value : 
+// Shallow copy - it returns all the elements which passes the test
+// console.log(marks.filter( (mark)=> mark>70));
+
+
+// findLast()
+// it will checks the array in reverse order and gives the element that satisfy the condition provided in the callback function but from the back
+
+// return value: 
+// it will return the first element which passes the condition else undefined
+// console.log(marks.findLast((mark)=>mark>60));
+
+// findLastIndex()
+// it will give the index instead of giving the element itself and everthing same as above method
+// console.log(marks.findLastIndex((mark)=>mark>60));
+
+
+
+// let arrToFLat = [23,23,23,4,[34,34,[645]],45,4]
+// console.log(arrToFLat.flat(Infinity));
+
+// flatMap()
+
+// console.log(marks.flatMap((grade) => grade===75 ? [90,[76,99],90] : 1))
+
+// Array.from()
+// 
+// let str = "32456899"
+// console.log(Array.from(str, (strNum) => {
+//     return parseInt(strNum)
+// }))
+
+
+// Array.of()
+// console.log(Array.isArray(Array.of()));
+
+// reverse()
+console.log(marks.reverse());
+
+
+// some()
+// if atleast one element is satisfying the condition provided in the callback function of some() then, it return true
+console.log(marks.some((mark)=>mark<40));
